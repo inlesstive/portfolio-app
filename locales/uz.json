@@ -1,0 +1,12 @@
+{
+  "navBar": [
+    {
+      "name": "Uy",
+      "link": "/"
+    },
+    {
+      "name": "Projects",
+      "link": "/projects"
+    }
+  ]
+}

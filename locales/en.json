@@ -1,0 +1,49 @@
+{
+  "navBar": [
+    {
+      "name": "Главная",
+      "link": "/"
+    },
+    {
+      "name": "Проекты",
+      "link": "/projects"
+    }
+  ],
+  "hero__title": "Привет {icon}",
+  "hero__subtit": ", я",
+  "hero__nametitle": "Имя Фамилия",
+  "hero__subtitle": "I built this template for everyone who is looking to create a new personal portfolio website. You can write your own blurb here.",
+  "hero__group-button-resume": "Ризюме",
+  "hero__group-button-projects": "Проекты",
+  "tech__title": "Технологии",
+  "projects-items": [
+    {
+      "title": "Project 1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, ",
+      "image": "/project.png",
+      "tags": ["NUXT", "SCSS", "TypeScript"],
+      "link": "/"
+    },
+    {
+      "title": "Project 1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, ",
+      "image": "/project.png",
+      "tags": ["NUXT", "SCSS", "TypeScript"],
+      "link": "/"
+    },
+    {
+      "title": "Project 1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, ",
+      "image": "/project.png",
+      "tags": ["NUXT", "SCSS", "TypeScript"],
+      "link": "/"
+    },
+    {
+      "title": "Project 1 en",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, ",
+      "image": "/project.png",
+      "tags": ["NUXT", "SCSS", "TypeScript"],
+      "link": "/"
+    }
+  ]
+}
