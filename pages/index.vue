@@ -6,8 +6,7 @@ const route = useRoute();
   <div>
     <Hero />
     <Technologies />
-    <Projects />
+    <Projects items=2  />
     <Contact />
-    <Footer />
   </div>
 </template>

@@ -1,13 +1,19 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+defineProps({
+  items: Number,
+})
+
+</script>
 
 <template>
   <div class="wrapper projects__content">
     <h2 class="projects__title">
-      {{ $t("projects__title") }}
+      {{ $t("projects__title") }} {{ items }}
     </h2>
     <div class="projects__block">
-      <div class="projects__item" v-for="item in $tm('projects-items')">
+      <div class="projects__item" v-for="(item, index) in $tm('projects-items').slice(0, items)" >
         <img src="/project.png" alt="" />
+        
         <h3 class="projects__item-title">
           {{ item.title }}
         </h3>
@@ -21,7 +27,7 @@
         </div>
       </div>
     </div>
-    <div class="projects__button">
+    <div class="projects__button" v-show="items">
       <NuxtLink class="projects__button-watchall" to="/">
         {{ $t("project__button-watchall") }}
       </NuxtLink>
