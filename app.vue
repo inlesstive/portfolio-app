@@ -1,10 +1,14 @@
+<script setup lang="ts"></script>
+
 <template>
-  <Header />
+  <Header  />
   <NuxtPage />
   <Footer />
 </template>
 
 <style>
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+
 .page-enter-active,
 .page-leave-active {
   transition: all 0.4s;
@@ -14,8 +18,6 @@
   opacity: 0;
   filter: blur(1rem);
 }
-
-@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
 
 * {
   font-family: "SF Pro Display", sans-serif;
@@ -51,7 +53,7 @@ a {
   --tech__block-color: rgba(217, 217, 217, 0.5);
   --secodn__black-color: rgba(0, 0, 0, 0.87);
   --project__card-color: rgba(224, 224, 224, 0.5);
-  --input__form-color: rgba(0, 0, 0, 0.30);
+  --input__form-color: rgba(0, 0, 0, 0.3);
 }
 
 .wrapper {

@@ -1,18 +1,45 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+onMounted(() => {
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".item__1 ",
+      toggleActions: "restart reverse restart reverse",
+    },
+  });
+  tl.from(".item__1", {
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+      trigger: ".item__1",
+      toggleActions: "restart reverse restart reverse",
+    },
+  });
+  tl.from(".hero__img", { opacity: 0, y: 50, duration: 0.5 });
+  tl.from(".item__2", { opacity: 0, y: 50, duration: 0.5 });
+  tl.from(".item__3", { opacity: 0, y: 50, duration: 0.7 });
+  tl.from(".hero__subtitle", { opacity: 0, duration: 0.7 });
+  tl.from(".hero__group-button-resume", { opacity: 0, duration: 0.7 });
+  tl.from(".hero__group-button-projects", { opacity: 0, duration: 0.7 });
+});
+</script>
 
 <template>
-  <div class="wrapper hero__content">
+  <div ref="myElement" class="wrapper hero__content">
     <h1 class="hero__title">
       <div>
-        <span>
+        <span class="item__1">
           {{ $t("hero__title") }}
         </span>
         <IconsHelloEmoji class="hero__img" />
-        <span>
+        <span class="item__2">
           {{ $t("hero__subtit") }}
         </span>
       </div>
-      <span class="hero__style-text">
+      <span class="hero__style-text item__3">
         {{ $t("hero__nametitle") }}
       </span>
     </h1>
@@ -32,7 +59,6 @@
 
 <style lang="scss" scoped>
 .hero {
-
   &__subtitle {
     color: var(--hero__text-projects-color);
     text-align: center;
@@ -62,7 +88,7 @@
       color: var(--hero__text-projects-color);
       border-radius: 12px;
       transition: background-color 0.3s;
-      &:hover{
+      &:hover {
         background-color: var(--hero__tbutton-projects-color);
       }
     }

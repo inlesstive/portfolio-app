@@ -1,4 +1,20 @@
 <script lang="ts" setup>
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+onMounted(() => {
+  const tl = gsap.timeline();
+
+  tl.from(
+    ".header1",
+    {
+      y: 10,
+      opacity: 0,
+      duration: 1,
+    }
+  );
+});
 const route = useRoute();
 
 const burgerMenuController = ref(false);
@@ -56,7 +72,7 @@ const filteredLangArr = computed(() => {
       v-show="burgerMenuController"
     />
   </transition>
-  <div class="wrapper">
+  <div class="wrapper header1">
     <header class="header">
       <div class="header__logo">inlesstive.</div>
 

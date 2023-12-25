@@ -18,6 +18,9 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
-    "scss": "^0.2.4"
+    "gsap": "^3.12.4",
+    "motion": "^10.16.4",
+    "scss": "^0.2.4",
+    "splitting": "^1.0.6"
   }
 }
