@@ -3,6 +3,8 @@ defineProps({
   items: String,
 });
 
+const {tm} = useI18n()
+
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -27,7 +29,7 @@ onMounted(() => {
     duration: 0.2,
   });
 
-  for (let i = 0; i < 8; i++) {
+  for (let i = 0; i < tm('projects-items').length; i++) {
     tl.from(`.index${i}`, {
     opacity: 0,
     y: 50,
