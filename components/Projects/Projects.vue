@@ -32,6 +32,7 @@ onMounted(() => {
     opacity: 0,
     y: 50,
     duration: 0.2,
+    delay: 0.09,
   });
   }
 });
