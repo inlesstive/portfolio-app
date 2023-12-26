@@ -9,10 +9,10 @@
       "link": "/projects"
     }
   ],
-  "hero__title": "Привет {icon}",
+  "hero__title": "Привет ",
   "hero__subtit": ", я",
-  "hero__nametitle": "Имя Фамилия",
-  "hero__subtitle": "I built this template for everyone who is looking to create a new personal portfolio website. You can write your own blurb here.",
+  "hero__nametitle": "Мирошников Владислав",
+  "hero__subtitle": "Разработчик Vue с фокусом на создание удивительных веб-приложений. ",
   "hero__group-button-resume": "Ризюме",
   "hero__group-button-projects": "Проекты",
   "tech__title": "Технологии",
@@ -60,8 +60,14 @@
       "link": "/"
     }
   ],
-  "contact__text": "I built this template for everyone who is looking to create a new personal portfolio website. You can write your own blurb here. 😃 ",
-  "contact__send-button": "Send",
+  "contact__text": "Если вы хотите связаться и обсудить возможное сотрудничество, буду рад услышать вас. Заполните удобную форму. ",
+  "contact__send-button": "Отправить",
+  "contact__title": "Контакты",
+  "project__button-watchall": "Все проекты",
+  "projects__title": "Проекты",
+  "contact__placeholder-email": "Почта",
+  "contact__placeholder-name": "Имя",
+  "contact__placeholder-textarea": "Сообщение",
   "footer": {
     "footer__links": [
       {

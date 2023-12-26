@@ -11,4 +11,5 @@ export default defineI18nConfig(() => ({
   lazy: true,
   locale: selectedLang || defaultLang,
   messages,
+  globalInjection: true
 }));

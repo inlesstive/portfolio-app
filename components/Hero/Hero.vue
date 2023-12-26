@@ -8,22 +8,20 @@ onMounted(() => {
     scrollTrigger: {
       trigger: ".item__1 ",
       toggleActions: "restart reverse restart reverse",
+      start: "top bottom",
+      end: "bottom+=100 top",
     },
   });
   tl.from(".item__1", {
     opacity: 0,
     duration: 1,
-    scrollTrigger: {
-      trigger: ".item__1",
-      toggleActions: "restart reverse restart reverse",
-    },
   });
-  tl.from(".hero__img", { opacity: 0, y: 50, duration: 0.5 });
-  tl.from(".item__2", { opacity: 0, y: 50, duration: 0.5 });
-  tl.from(".item__3", { opacity: 0, y: 50, duration: 0.7 });
-  tl.from(".hero__subtitle", { opacity: 0, duration: 0.7 });
-  tl.from(".hero__group-button-resume", { opacity: 0, duration: 0.7 });
-  tl.from(".hero__group-button-projects", { opacity: 0, duration: 0.7 });
+  tl.from(".hero__img", { opacity: 0, y: 50, duration: 0.3 });
+  tl.from(".item__2", { opacity: 0, y: 50, duration: 0.3 });
+  tl.from(".item__3", { opacity: 0, y: 50, duration: 0.3 });
+  tl.from(".hero__subtitle", { opacity: 0, duration: 0.3 });
+  tl.from(".hero__group-button-resume", { opacity: 0, duration: 0.3 });
+  tl.from(".hero__group-button-projects", { opacity: 0, duration: 0.3 });
 });
 </script>
 
@@ -50,7 +48,7 @@ onMounted(() => {
       <NuxtLink class="hero__group-button-resume" to="/">
         {{ $t("hero__group-button-resume") }}
       </NuxtLink>
-      <NuxtLink class="hero__group-button-projects" to="https://youtube.com/">
+      <NuxtLink class="hero__group-button-projects" to="/projects">
         {{ $t("hero__group-button-projects") }}
       </NuxtLink>
     </div>

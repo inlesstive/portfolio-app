@@ -12,12 +12,12 @@
       </p>
       <form class="contact__form" action="">
         <div class="contact__form-top">
-          <input type="text" class="contact__form-input" placeholder="Name" />
-          <input type="text" class="contact__form-input" placeholder="Email" />
+          <input type="text" class="contact__form-input" :placeholder="$t('contact__placeholder-name')" />
+          <input type="text" class="contact__form-input" :placeholder="$t('contact__placeholder-email')" />
         </div>
         <textarea
           class="contact__form-textarea"
-          placeholder="Message"
+          :placeholder="$t('contact__placeholder-textarea')"
           name=""
           id=""
           cols="30"

@@ -1,19 +1,54 @@
 <script lang="ts" setup>
 defineProps({
-  items: Number,
-})
+  items: String,
+});
 
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+onMounted(() => {
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".projects__content",
+      toggleActions: "restart reverse restart reverse",
+      start: "top bottom",
+      end: "bottom+=500 top",
+    },
+  });
+  tl.from(".projects__title", {
+    opacity: 0,
+    y: 50,
+    duration: 0.7,
+  });
+  tl.from(".projects__button", {
+    opacity: 0,
+    y: 50,
+    duration: 0.2,
+  });
+
+  for (let i = 0; i < 8; i++) {
+    tl.from(`.index${i}`, {
+    opacity: 0,
+    y: 50,
+    duration: 0.2,
+  });
+  }
+});
 </script>
 
 <template>
   <div class="wrapper projects__content">
     <h2 class="projects__title">
-      {{ $t("projects__title") }} {{ items }}
+      {{ $t("projects__title") }}
     </h2>
     <div class="projects__block">
-      <div class="projects__item" v-for="(item, index) in $tm('projects-items').slice(0, items)" >
+      <div
+        :class="'projects__item' + ' index' + index"
+        v-for="(item, index) in $tm('projects-items').slice(0, items)"
+      >
         <img src="/project.png" alt="" />
-        
+
         <h3 class="projects__item-title">
           {{ item.title }}
         </h3>
@@ -28,7 +63,7 @@ defineProps({
       </div>
     </div>
     <div class="projects__button" v-show="items">
-      <NuxtLink class="projects__button-watchall" to="/">
+      <NuxtLink class="projects__button-watchall" to="/projects">
         {{ $t("project__button-watchall") }}
       </NuxtLink>
     </div>

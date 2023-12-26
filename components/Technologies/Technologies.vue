@@ -1,11 +1,32 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+onMounted(() => {
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".tech__content",
+      toggleActions: "restart reverse restart reverse",
+      start: "top bottom",
+      end: "bottom+=100 top",
+    },
+  });
+  tl.from(".tech__title", {
+    opacity: 0,
+    y: 50,
+    duration: 1,
+  });
+  tl.from(".tech__block", { opacity: 0, y: 50, duration: 0.5 });
+});
+</script>
 
 <template>
   <div class="wrapper tech__content">
     <h2 class="tech__title">
       {{ $t("tech__title") }}
     </h2>
-    <div class="tech__block" >
+    <div class="tech__block">
       <div class="tech__item vue" v-for="item in 10">
         <img src="/vue-icon.png" alt="" />
       </div>
@@ -42,7 +63,10 @@
     border-radius: 32px;
     display: grid;
     margin-top: 50px;
-    grid-template-columns: repeat(auto-fill, minmax(48px, 1fr)); // Меняйте значения в minmax() в зависимости от вашего дизайна
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(48px, 1fr)
+    ); // Меняйте значения в minmax() в зависимости от вашего дизайна
     gap: 16px; // Пространство между элементами, можно менять по желанию
     width: 100%; // Ширина блока
   }

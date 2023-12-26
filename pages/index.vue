@@ -7,7 +7,7 @@ const route = useRoute();
   <div>
     <Hero ref="hero" />
     <Technologies />
-    <Projects items="2" />
+    <Projects items=2 />
     <Contact />
   </div>
 </template>

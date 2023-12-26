@@ -91,9 +91,9 @@ const filteredLangArr = computed(() => {
       </nav>
 
       <div class="header__action">
-        <button class="header__action__switcher theme">
+        <!-- <button class="header__action__switcher theme">
           <img src="@/assets/icons/sun.svg" alt="Icons sun" />
-        </button>
+        </button> -->
 
         <div class="select__language">
           <div class="header__header">

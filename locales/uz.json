@@ -1,12 +1,85 @@
 {
   "navBar": [
     {
-      "name": "Uy",
+      "name": "Bosh sahifa",
       "link": "/"
     },
     {
-      "name": "Projects",
+      "name": "Loyihalar",
       "link": "/projects"
     }
-  ]
+  ],
+  "hero__title": "Salom ",
+  "hero__subtit": ", Men",
+  "hero__nametitle": "Vladislav Miroshnikov",
+  "hero__subtitle": "Vue tuzuvchisi, ajoyib veb ilovalar yaratishga yo'naltirilgan. ",
+  "hero__group-button-resume": "Rezyume",
+  "hero__group-button-projects": "Loyihalar",
+  "tech__title": "Texnologiyalar",
+  "projects-items": [
+    {
+      "title": "Loyiha 1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, ",
+      "image": "/project.png",
+      "tags": ["NUXT", "SCSS", "TypeScript"],
+      "link": "/"
+    },
+    {
+      "title": "Loyiha 2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, ",
+      "image": "/project.png",
+      "tags": ["NUXT", "SCSS", "TypeScript"],
+      "link": "/"
+    },
+    {
+      "title": "Loyiha 3",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, ",
+      "image": "/project.png",
+      "tags": ["NUXT", "SCSS", "TypeScript"],
+      "link": "/"
+    },
+    {
+      "title": "Loyiha 4",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, ",
+      "image": "/project.png",
+      "tags": ["NUXT", "SCSS", "TypeScript"],
+      "link": "/"
+    },
+    {
+      "title": "Loyiha 5",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, ",
+      "image": "/project.png",
+      "tags": ["NUXT", "SCSS", "TypeScript"],
+      "link": "/"
+    },
+    {
+      "title": "Loyiha 6",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, ",
+      "image": "/project.png",
+      "tags": ["NUXT", "SCSS", "TypeScript"],
+      "link": "/"
+    }
+  ],
+  "contact__text": "Agar siz bilan bog'lanish va potentsial hamkorlikni muzokaralashni xohlaysiz, men sizni eshitishdan mamnun bo'larman. Iltimos, qulay shaklda to'ldiring. ",
+  "contact__send-button": "Yuborish",
+  "contact__title": "Bog'lanish",
+  "project__button-watchall": "Barcha loyihalarni ko'rish",
+  "projects__title": "Loyihalar",
+  "contact__placeholder-email": "Elektron pochta",
+  "contact__placeholder-name": "Ism",
+  "contact__placeholder-textarea": "Xabar",
+  "footer": {
+    "footer__links": [
+      {
+        "img": "/instagram.svg",
+        "link": "/",
+        "class": "instagram"
+      },
+      {
+        "img": "/telegram.svg",
+        "link": "https://t.me/inlesstive",
+        "class": "telegram"
+      }
+    ]
+  }
 }

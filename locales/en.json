@@ -1,21 +1,21 @@
 {
   "navBar": [
     {
-      "name": "Главная",
+      "name": "Home",
       "link": "/"
     },
     {
-      "name": "Проекты",
+      "name": "Projects",
       "link": "/projects"
     }
   ],
-  "hero__title": "Привет {icon}",
-  "hero__subtit": ", я",
-  "hero__nametitle": "Имя Фамилия",
-  "hero__subtitle": "I built this template for everyone who is looking to create a new personal portfolio website. You can write your own blurb here.",
-  "hero__group-button-resume": "Ризюме",
-  "hero__group-button-projects": "Проекты",
-  "tech__title": "Технологии",
+  "hero__title": "Hello ",
+  "hero__subtit": ", I'm",
+  "hero__nametitle": "Vladislav Miroshnikov",
+  "hero__subtitle": "Vue Developer focused on creating amazing web applications. ",
+  "hero__group-button-resume": "Resume",
+  "hero__group-button-projects": "Projects",
+  "tech__title": "Technologies",
   "projects-items": [
     {
       "title": "Project 1",
@@ -25,25 +25,61 @@
       "link": "/"
     },
     {
-      "title": "Project 1",
+      "title": "Project 2",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, ",
       "image": "/project.png",
       "tags": ["NUXT", "SCSS", "TypeScript"],
       "link": "/"
     },
     {
-      "title": "Project 1",
+      "title": "Project 3",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, ",
       "image": "/project.png",
       "tags": ["NUXT", "SCSS", "TypeScript"],
       "link": "/"
     },
     {
-      "title": "Project 1 en",
+      "title": "Project 4",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, ",
+      "image": "/project.png",
+      "tags": ["NUXT", "SCSS", "TypeScript"],
+      "link": "/"
+    },
+    {
+      "title": "Project 5",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, ",
+      "image": "/project.png",
+      "tags": ["NUXT", "SCSS", "TypeScript"],
+      "link": "/"
+    },
+    {
+      "title": "Project 6",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, ",
       "image": "/project.png",
       "tags": ["NUXT", "SCSS", "TypeScript"],
       "link": "/"
     }
-  ]
+  ],
+  "contact__text": "If you would like to get in touch and discuss potential collaboration, I'll be happy to hear from you. Please fill out the convenient form. ",
+  "contact__send-button": "Send",
+  "contact__title": "Contacts",
+  "project__button-watchall": "View All Projects",
+  "projects__title": "Projects",
+  "contact__placeholder-email": "Email",
+  "contact__placeholder-name": "Name",
+  "contact__placeholder-textarea": "Message",
+  "footer": {
+    "footer__links": [
+      {
+        "img": "/instagram.svg",
+        "link": "/",
+        "class": "instagram"
+      },
+      {
+        "img": "/telegram.svg",
+        "link": "https://t.me/inlesstive",
+        "class": "telegram"
+      }
+    ]
+  }
 }
