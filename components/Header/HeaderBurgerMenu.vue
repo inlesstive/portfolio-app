@@ -24,9 +24,9 @@
 .header__burger {
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: fixed;
   background-color: var(--light_bg_color);
-  z-index: 5;
+  z-index: 2;
   &-items {
     display: flex;
     justify-content: center;

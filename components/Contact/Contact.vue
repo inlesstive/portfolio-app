@@ -24,14 +24,12 @@ onMounted(() => {
   });
   for (let i = 1; i < 5; i++) {
     tl.from(`.form-${i}`, {
-    opacity: 0,
-    y: 50,
-    duration: 0.2,
-  });
+      opacity: 0,
+      y: 50,
+      duration: 0.2,
+    });
   }
 });
-
-
 </script>
 
 <template>
@@ -46,8 +44,16 @@ onMounted(() => {
       </p>
       <form class="contact__form" action="">
         <div class="contact__form-top">
-          <input type="text" class="contact__form-input form-1" :placeholder="$t('contact__placeholder-name')" />
-          <input type="text" class="contact__form-input form-2" :placeholder="$t('contact__placeholder-email')" />
+          <input
+            type="text"
+            class="contact__form-input form-1"
+            :placeholder="$t('contact__placeholder-name')"
+          />
+          <input
+            type="text"
+            class="contact__form-input form-2"
+            :placeholder="$t('contact__placeholder-email')"
+          />
         </div>
         <textarea
           class="contact__form-textarea form-3"
@@ -66,6 +72,19 @@ onMounted(() => {
 </template>
 
 <style lang="scss" scoped>
+@media screen and (max-width: 786.99px) {
+  .contact__text {
+    max-width: 100% !important;
+    text-align: center;
+  }
+  .contact__block {
+    flex-direction: column !important;
+    gap: 20px;
+  }
+  .contact__form-input {
+    width: 100%;
+  }
+}
 .contact {
   &__block {
     display: flex;
@@ -96,10 +115,9 @@ onMounted(() => {
       border: none;
       cursor: pointer;
       transition: background-color 0.3s;
-      &:hover{
+      &:hover {
         background-color: var(--hero__tbutton-resume-color);
       }
-      
     }
     &-textarea {
       padding: 13px 15px;

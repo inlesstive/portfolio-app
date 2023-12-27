@@ -74,6 +74,12 @@ onMounted(() => {
 </template>
 
 <style lang="scss" scoped>
+
+@media screen and (max-width: 786.99px) {
+  .projects__block {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
 .projects {
   &__button {
     display: flex;

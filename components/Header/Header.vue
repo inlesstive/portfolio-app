@@ -189,7 +189,7 @@ const filteredLangArr = computed(() => {
   color: var(--header__nav-acitve_color) !important;
 }
 .lang {
-  z-index: 3;
+  z-index: 100;
 }
 
 #nav-icon4 {
@@ -200,7 +200,7 @@ const filteredLangArr = computed(() => {
   transition: 0.5s ease-in-out;
   cursor: pointer;
   display: none;
-  z-index: 5;
+  z-index: 7;
 }
 #nav-icon4 span {
   display: block;
