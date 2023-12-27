@@ -10,6 +10,7 @@ onMounted(() => {
       toggleActions: "restart reverse restart reverse",
       start: "top bottom",
       end: "bottom+=100 top",
+      
     },
   });
   tl.from(".item__1", {

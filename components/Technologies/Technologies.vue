@@ -19,6 +19,61 @@ onMounted(() => {
   });
   tl.from(".tech__block", { opacity: 0, y: 50, duration: 0.5 });
 });
+
+const icons = [
+  {
+    name: "vite",
+    image: "/vite.png",
+  },
+  {
+    name: "vue",
+    image: "/vue-icon.png",
+  },
+  {
+    name: "sass",
+    image: "/sass.svg",
+  },
+  {
+    name: "nuxt",
+    image: "/nuxt.svg",
+  },
+  {
+    name: "vscode",
+    image: "/vscode.png",
+  },
+  {
+    name: "ts",
+    image: "/ts.png",
+  },
+  {
+    name: "html",
+    image: "/html.png",
+  },
+  {
+    name: "css",
+    image: "/css.png",
+  },
+  {
+    name: "js",
+    image: "/js.png",
+  },
+  {
+    name: "bootstrap",
+    image: "/bootstrap.png",
+  },
+  {
+    name: "python",
+    image: "/python.svg",
+  },
+  {
+    name: "fastapi",
+    image: "/fastapi.png",
+  },
+  {
+    name: "github",
+    image: "/github.png",
+  },
+];
 </script>
 
 <template>
@@ -27,16 +82,54 @@ onMounted(() => {
       {{ $t("tech__title") }}
     </h2>
     <div class="tech__block">
-      <div class="tech__item vue" v-for="item in 10">
-        <img src="/vue-icon.png" alt="" />
+      <div :class="'tech__item' + ' ' + item.name" v-for="item in icons">
+        <img :src="item.image" alt="" />
       </div>
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
+
+.github {
+  background: rgb(0, 0, 0, 0.09);
+}
+.fastapi {
+  background: rgb(5, 153, 139, 0.15);
+}
+.python{
+  background: rgb(55, 115, 166, 0.15);
+}
+.bootstrap {
+  background: rgb(114, 16, 245, 0.15);
+}
+.js {
+  background: rgb(240, 220, 78, 0.15);
+}
+.css {
+  background: rgb(29, 136, 199, 0.15);
+}
+.html {
+  background: rgb(255, 87, 34, 0.15);
+}
 .vue {
-  background: rgba(65, 184, 131, 0.35);
+  background: rgba(65, 184, 131, 0.15);
+}
+
+.vite {
+  background: rgb(186, 56, 254, 0.15);
+}
+.sass {
+  background: rgb(207, 100, 154, 0.15)
+}
+.nuxt {
+  background: rgb(0, 220, 130, 0.15)
+}
+.vscode {
+  background: rgb(31, 156, 240, 0.15);;
+}
+.ts {
+  background: rgb(49, 120, 198, 0.15);
 }
 
 .tech {

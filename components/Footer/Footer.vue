@@ -1,5 +1,22 @@
 <script lang="ts" setup>
-const footerLink = useFooterLink();
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+onMounted(() => {
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".footer__content",
+      toggleActions: "restart reverse restart reverse",
+    },
+  });
+  tl.from(".footer__content", {
+    opacity: 0,
+    duration: 1,
+  });
+});
+
+
 </script>
 
 <template>
@@ -152,6 +169,7 @@ const footerLink = useFooterLink();
 .footer {
   &__content {
     margin-top: 90px;
+    padding: 10px;
   }
   &__block {
     display: flex;

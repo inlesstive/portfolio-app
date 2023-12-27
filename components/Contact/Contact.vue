@@ -1,4 +1,38 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+onMounted(() => {
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".contact__content",
+      toggleActions: "restart reverse restart reverse",
+      start: "top bottom",
+      end: "bottom+=500 top",
+    },
+  });
+  tl.from(".contact__title", {
+    opacity: 0,
+    y: 50,
+    duration: 0.7,
+  });
+  tl.from(".contact__text", {
+    opacity: 0,
+    y: 50,
+    duration: 0.3,
+  });
+  for (let i = 1; i < 5; i++) {
+    tl.from(`.form-${i}`, {
+    opacity: 0,
+    y: 50,
+    duration: 0.2,
+  });
+  }
+});
+
+
+</script>
 
 <template>
   <div class="wrapper contact__content">
@@ -12,18 +46,18 @@
       </p>
       <form class="contact__form" action="">
         <div class="contact__form-top">
-          <input type="text" class="contact__form-input" :placeholder="$t('contact__placeholder-name')" />
-          <input type="text" class="contact__form-input" :placeholder="$t('contact__placeholder-email')" />
+          <input type="text" class="contact__form-input form-1" :placeholder="$t('contact__placeholder-name')" />
+          <input type="text" class="contact__form-input form-2" :placeholder="$t('contact__placeholder-email')" />
         </div>
         <textarea
-          class="contact__form-textarea"
+          class="contact__form-textarea form-3"
           :placeholder="$t('contact__placeholder-textarea')"
           name=""
           id=""
           cols="30"
           rows="10"
         ></textarea>
-        <button class="contact__form-send">
+        <button class="contact__form-send form-4">
           {{ $t("contact__send-button") }}
         </button>
       </form>
