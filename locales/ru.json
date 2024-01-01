@@ -18,45 +18,38 @@
   "tech__title": "Технологии",
   "projects-items": [
     {
-      "title": "Project 1",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, ",
-      "image": "/project.png",
-      "tags": ["NUXT", "SCSS", "TypeScript"],
+      "title": "Udpost Logistics",
+      "description": "Сайт для логистической компании",
+      "image": "/project-1.png",
+      "tags": ["HTML", "JS", "PHP"],
       "link": "/"
     },
     {
-      "title": "Project 1",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, ",
-      "image": "/project.png",
-      "tags": ["NUXT", "SCSS", "TypeScript"],
+      "title": "ACC SHOP",
+      "description": "Сайт по продаже аккаунтов и игровый ценностей",
+      "image": "/project-5.png",
+      "tags": ["HTML", "JS", "PHP"],
       "link": "/"
     },
     {
-      "title": "Project 1",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, ",
-      "image": "/project.png",
-      "tags": ["NUXT", "SCSS", "TypeScript"],
+      "title": "Сайт портфолио",
+      "description": "Учебный проект.",
+      "image": "/project-2.png",
+      "tags": ["HTML", "CSS"],
       "link": "/"
     },
     {
-      "title": "Project 1",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, ",
-      "image": "/project.png",
-      "tags": ["NUXT", "SCSS", "TypeScript"],
+      "title": "Сайт каталог",
+      "description": "Учебный проект.",
+      "image": "/project-3.png",
+      "tags": ["HTML", "CSS"],
       "link": "/"
     },
     {
-      "title": "Project 1",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, ",
-      "image": "/project.png",
-      "tags": ["NUXT", "SCSS", "TypeScript"],
-      "link": "/"
-    },
-    {
-      "title": "Project 1",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, ",
-      "image": "/project.png",
-      "tags": ["NUXT", "SCSS", "TypeScript"],
+      "title": "Vue Cinema",
+      "description": "Каталог фильмов, построеный на vue js",
+      "image": "/project-4.png",
+      "tags": ["Vue", "SCSS", "TypeScript"],
       "link": "/"
     }
   ],

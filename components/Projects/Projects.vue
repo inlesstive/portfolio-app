@@ -50,7 +50,7 @@ onMounted(() => {
         :class="'projects__item' + ' index' + index"
         v-for="(item, index) in $tm('projects-items').slice(0, items)"
       >
-        <img src="/project.png" alt="" />
+        <img :src=item.image alt="" />
 
         <h3 class="projects__item-title">
           {{ item.title }}
